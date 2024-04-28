@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pig Game</title>
+</head>
+
+<body>
+    <div class="mainBox">
+        <div class="firstBox">
+            <p class="playerOneName">Player 1</p>
+            <p class="playerOneScore"> 0 </p>
+            <div class="playerOneCurrentBOx shadow">
+                <p>Current</p>
+                <p class="OneCurrentScore">0</p>
+            </div>
+        </div>
+        <div class="thirdBox">
+            <button class="reset">Reset</button>
+            <div class="dice">
+                <div class="face-1">
+                    <svg cache-id="3434f7062e9743f9bdca97cd6f52d14b" id="dice-icon" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300"
+                        shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                        <g id="dice-icon-u-facefour" transform="matrix(4.218395 0 0 4.218395-482.759246-412.048121)">
+                            <rect id="dice-icon-s-rect1" width="84.679476" height="88.760415" rx="8" ry="8"
+                                transform="matrix(.81579 0 0 0.708581 115.459665 101.790465)" fill="#fff"
+                                stroke-width="0" />
+                            <ellipse id="dice-icon-s-ellipse1" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 132.750184 117.048153)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="dice-icon-s-ellipse2" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 168.746669 147.333096)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="dice-icon-s-ellipse3" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 132.750184 147.333096)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="dice-icon-s-ellipse4" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 168.746669 117.048153)" fill="#3e3c3c"
+                                stroke-width="0" />
+                        </g>
+                        <g id="dice-icon-u-facefour2" transform="matrix(4.218395 0 0 4.218395-482.759246-412.048121)">
+                            <rect id="dice-icon-s-rect2" width="84.679476" height="88.760415" rx="8" ry="8"
+                                transform="matrix(.81579 0 0 0.708581 115.459665 101.790465)" fill="#fff"
+                                stroke-width="0" />
+                            <ellipse id="dice-icon-s-ellipse10" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 150 133.237433)" fill="#d3183e"
+                                stroke-width="0" />
+                        </g>
+                    </svg>
+
+
+                </div>
+                <div class="face-2">
+
+                    <svg id="facetwo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                        <g id="facetwo-u-facefour" transform="matrix(4.218395 0 0 4.218395-482.759246-412.048121)">
+                            <rect id="facetwo-s-rect1" width="84.679476" height="88.760415" rx="8" ry="8"
+                                transform="matrix(.81579 0 0 0.708581 115.459665 101.790465)" fill="#fff"
+                                stroke-width="0" />
+                            <ellipse id="facetwo-s-ellipse1" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 132.750184 117.048153)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facetwo-s-ellipse2" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 168.746669 147.333096)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facetwo-s-ellipse3" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 132.750184 147.333096)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facetwo-s-ellipse4" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 168.746669 117.048153)" fill="#3e3c3c"
+                                stroke-width="0" />
+                        </g>
+                        <g id="facetwo-u-facefour2" transform="matrix(4.218395 0 0 4.218395-482.759246-412.048121)">
+                            <rect id="facetwo-s-rect2" width="84.679476" height="88.760415" rx="8" ry="8"
+                                transform="matrix(.81579 0 0 0.708581 115.459665 101.790465)" fill="#fff"
+                                stroke-width="0" />
+                            <ellipse id="facetwo-s-ellipse5" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 131.40544 117.048153)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facetwo-s-ellipse8" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 168.746669 147.333096)" fill="#3e3c3c"
+                                stroke-width="0" />
+                        </g>
+                    </svg>
+
+
+                </div>
+                <div class="face-3">
+
+
+                    <svg id="facethree" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                        <g id="facethree-u-facefour" transform="matrix(4.218395 0 0 4.218395-482.759246-412.048121)">
+                            <rect id="facethree-s-rect1" width="84.679476" height="88.760415" rx="8" ry="8"
+                                transform="matrix(.81579 0 0 0.708581 115.459665 101.790465)" fill="#fff"
+                                stroke-width="0" />
+                            <ellipse id="facethree-s-ellipse1" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 132.750184 117.048153)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facethree-s-ellipse2" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 168.746669 147.333096)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facethree-s-ellipse3" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 132.750184 147.333096)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facethree-s-ellipse4" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 168.746669 117.048153)" fill="#3e3c3c"
+                                stroke-width="0" />
+                        </g>
+                        <g id="facethree-u-facefour2" transform="matrix(4.218395 0 0 4.218395-482.759246-412.048121)">
+                            <rect id="facethree-s-rect2" width="84.679476" height="88.760415" rx="8" ry="8"
+                                transform="matrix(.81579 0 0 0.708581 115.459665 101.790465)" fill="#fff"
+                                stroke-width="0" />
+                            <ellipse id="facethree-s-ellipse5" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 131.40544 117.048153)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facethree-s-ellipse8" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 168.746669 147.333096)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facethree-s-ellipse10" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 150 133.237433)" fill="#3e3c3c"
+                                stroke-width="0" />
+                        </g>
+                    </svg>
+
+                </div>
+                <div class="face-4">
+                    <svg id="dice-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                        <g id="dice-icon-u-facefour" transform="matrix(4.218395 0 0 4.218395-482.759246-412.048121)">
+                            <rect id="dice-icon-s-rect1" width="84.679476" height="88.760415" rx="8" ry="8"
+                                transform="matrix(.81579 0 0 0.708581 115.459665 101.790465)" fill="#fff"
+                                stroke-width="0" />
+                            <ellipse id="dice-icon-s-ellipse1" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 132.750184 117.048153)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="dice-icon-s-ellipse2" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 168.746669 147.333096)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="dice-icon-s-ellipse3" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 132.750184 147.333096)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="dice-icon-s-ellipse4" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 168.746669 117.048153)" fill="#3e3c3c"
+                                stroke-width="0" />
+                        </g>
+                    </svg>
+
+
+                </div>
+                <div class="face-5">
+
+                    <svg id="facefive" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                        <g id="facefive-u-facefour" transform="matrix(4.218395 0 0 4.218395-482.759246-412.048121)">
+                            <rect id="facefive-s-rect1" width="84.679476" height="88.760415" rx="8" ry="8"
+                                transform="matrix(.81579 0 0 0.708581 115.459665 101.790465)" fill="#fff"
+                                stroke-width="0" />
+                            <ellipse id="facefive-s-ellipse1" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 132.750184 117.048153)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facefive-s-ellipse2" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 168.746669 147.333096)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facefive-s-ellipse3" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 132.750184 147.333096)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facefive-s-ellipse4" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 168.746669 117.048153)" fill="#3e3c3c"
+                                stroke-width="0" />
+                        </g>
+                        <g id="facefive-u-facefour2" transform="matrix(4.218395 0 0 4.218395-482.759246-412.048121)">
+                            <rect id="facefive-s-rect2" width="84.679476" height="88.760415" rx="8" ry="8"
+                                transform="matrix(.81579 0 0 0.708581 115.459665 101.790465)" fill="#fff"
+                                stroke-width="0" />
+                            <ellipse id="facefive-s-ellipse5" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 131.40544 117.048153)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facefive-s-ellipse6" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 150 133.237433)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facefive-s-ellipse7" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 168.746669 147.333096)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facefive-s-ellipse8" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 132.750184 147.333096)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facefive-s-ellipse9" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 168.746669 117.048153)" fill="#3e3c3c"
+                                stroke-width="0" />
+                        </g>
+                    </svg>
+
+                </div>
+                <div class="face-6">
+
+                    <svg id="facesix" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                        <g id="facesix-u-facefour" transform="matrix(4.218395 0 0 4.218395-482.759246-412.048121)">
+                            <rect id="facesix-s-rect1" width="84.679476" height="88.760415" rx="8" ry="8"
+                                transform="matrix(.81579 0 0 0.708581 115.459665 101.790465)" fill="#fff"
+                                stroke-width="0" />
+                            <ellipse id="facesix-s-ellipse1" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 132.750184 117.048153)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facesix-s-ellipse2" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 168.746669 147.333096)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facesix-s-ellipse3" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 132.750184 147.333096)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facesix-s-ellipse4" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 168.746669 117.048153)" fill="#3e3c3c"
+                                stroke-width="0" />
+                        </g>
+                        <g id="facesix-u-facefour2" transform="matrix(4.218395 0 0 4.218395-482.759246-412.048121)">
+                            <rect id="facesix-s-rect2" width="84.679476" height="88.760415" rx="8" ry="8"
+                                transform="matrix(.81579 0 0 0.708581 115.459665 101.790465)" fill="#fff"
+                                stroke-width="0" />
+                            <ellipse id="facesix-s-ellipse5" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 131.40544 117.048153)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facesix-s-ellipse6" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 131.40544 131.724597)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facesix-s-ellipse7" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 168.746669 131.724597)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facesix-s-ellipse8" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 168.746669 147.333096)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facesix-s-ellipse9" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 131.40544 147.333096)" fill="#3e3c3c"
+                                stroke-width="0" />
+                            <ellipse id="facesix-s-ellipse10" rx="30" ry="30"
+                                transform="matrix(.202904 0 0 0.202904 168.746669 117.048153)" fill="#3e3c3c"
+                                stroke-width="0" />
+                        </g>
+                    </svg>
+
+                </div>
+            </div>
+            <button class="rollDice">Roll Dice</button>
+            <button class="hold">Hold</button>
+        </div>
+        <div class="secondBox">
+            <p class="playerSecondName">Player 2</p>
+            <p class="playerSecondScore"> 0 </p>
+            <div class="playerSecondCurrentBOx shadow">
+                <p>Current</p>
+                <p class="SecCurrentScore">0</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
